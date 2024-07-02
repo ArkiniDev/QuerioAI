@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="ai.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Boxicons CSS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.0.0/math.min.js"></script>
+    <title>QuerioAI</title>
+</head>
+<body>
+    <div class="sidebar" id="sidebar">
+        <a href="#home">
+            <i class='bx bx-chat'></i>
+        </a>
+        <button class="switch-btn" onclick="switchChat(0)">1</button>
+        <button class="switch-btn" onclick="switchChat(1)">2</button>
+        <!-- Add onclick event for logout confirmation -->
+        <a href="#" class="logout" onclick="confirmLogout()">
+            <i class='bx bx-log-out'></i>
+        </a>
+    </div>
+    <p style="font-size: 10px;">‎</p>
+    <div class="chat-container" id="chat-container">
+        <h2>‎</h2>
+        <div class="bot-message">
+            <div class="bot-message-content">
+                <img src="" alt="" style="width: 40px;">
+                <span>Hello! What equation can i help with today?</span>
+            </div>
+        </div>
+    </div>
+    <!-- Virtual keyboard container -->
+    <div class="keyboard" id="virtual-keyboard">
+        <!-- Number Keyboard -->
+        <div class="number-keyboard">
+            <!-- Buttons will be added synamically here -->
+        </div> 
+
+        <!-- Symbol Keyboard -->
+        <div class="symbol-keyboard">
+            <!-- Buttons will be added dynamically here -->
+        </div>
+    </div>
+    
+    <button class="toggle-btn" id="toggle-btn" onclick="toggleSidebar()">
+        <i class='bx bx-sidebar'></i> <!-- Default icon for open -->
+    </button>
+    
+    <!-- Chat input area with toggle keyboard and send button -->
+    <div class="msgContainer">
+        <input class="msgTextBox" type="text" id="user-input" placeholder="Type your message...">
+        <button class="msgSendBTN" id="send-btn" onclick="calculateExpression()">Send</button>
+    </div>
+    <button class="msgToggleKeyboard" onclick="toggleKeyboard()">
+        <i class='bx bxs-keyboard'></i>
+    </button>
+    <script src="script.js"></script>
+    <script>
+        // Function to confirm logout
+        function confirmLogout() {
+            // Display confirmation box
+            const confirmed = confirm("Are you sure you want to log out?");
+            
+            // If user confirms, perform logout action
+            if (confirmed) {
+                // Perform logout action here
+                // For now, let's just alert a message
+                window.location.href = 'index.html'; // Replace with your desired URL
+                // Redirect to logout page or perform logout logic
+                // window.location.href = "logout.php";
+            }
+        }
+    </script>
+</body>
+</html>

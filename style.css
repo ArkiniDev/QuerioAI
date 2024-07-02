@@ -1,0 +1,311 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Muli:wght@200;400;700;900&family=Raleway:wght@400;700&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  display: block;
+  overflow-x: hidden;
+  background-color: #1f2029;
+  color: #c4c3ca;
+  font-family: 'Muli', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  text-align: center;
+  margin-top: 5vw;
+}
+
+.Title01 {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 5vw;
+  letter-spacing: 8px;
+  line-height: 1;
+  text-transform: uppercase;
+  font-weight: 900;
+  color: #fff;
+  text-shadow: 10px 10px 5px #0000002f;
+}
+
+.Title02 {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 4vw;
+  letter-spacing: 8px;
+  line-height: 1;
+  text-transform: uppercase;
+  font-weight: 900;
+  color: #fff;
+  text-shadow: 10px 10px 5px #0000002f;
+}
+
+.Title03 {
+  text-align: center;
+  letter-spacing: 2px;
+  font-size: 2vw;
+  font-weight: 700;
+  color: #ffffffb5;
+  text-shadow: 5px 5px 5px #0000002f;
+  margin-top: 1vw;
+}
+
+.description {
+  text-align: center;
+  margin: 3vw auto;
+  max-width: 46vw;
+}
+
+.Title04 {
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: #ffffffb5;
+  text-shadow: 5px 5px 5px #0000002f;
+  font-family: 'Raleway', sans-serif;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.3));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0.5vw 0;
+}
+
+.info-sections {
+  display: flex;
+  justify-content: space-around;
+  margin: 5vw auto;
+  max-width: 1200px;
+}
+
+.info-sections section {
+  flex: 1;
+  margin: 0 1vw;
+  text-align: center;
+}
+
+.about-me h2, .features h2, .contact-us h2 {
+  font-size: 3.5rem; /* Increased font size */
+  color: #ffffffb5;
+  text-shadow: 5px 5px 5px #0000002f;
+  font-family: 'Muli', sans-serif;
+  margin-bottom: 1vw;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.939), rgba(255, 255, 255, 0));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.features ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.features li, .contact-us p, .about-me p {
+  letter-spacing: 2px;
+  font-size: 2rem; /* Increased font size */
+  font-weight: 500;
+  color: #ffffffb5;
+  text-shadow: 5px 5px 5px #0000002f;
+  font-family: 'Raleway', sans-serif;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.939), rgba(255, 255, 255, 0));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0.5vw 0;
+}
+
+.about-me, .features, .contact-us {
+  text-align: center;
+  margin: 3vw auto;
+  max-width: 800px;
+}
+
+.about-me, .features, .contact-us h2 {
+  font-size: 3.5rem; /* Increased font size */
+  color: #ffffffb5;
+  text-shadow: 5px 5px 5px #0000002f;
+  font-family: 'Muli', sans-serif;
+  margin-bottom: 1vw;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.939), rgba(255, 255, 255, 0));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.about-me p, .features ul, .contact-us p {
+  letter-spacing: 2px;
+  font-size: 2rem; /* Increased font size */
+  font-weight: 400;
+  color: #ffffffb5;
+  text-shadow: 5px 5px 5px #0000002f;
+  font-family: 'Raleway', sans-serif;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.939), rgba(255, 255, 255, 0));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0.5vw 0;
+}
+
+.features ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.features li {
+  margin: 0.5vw 0;
+}
+
+a {
+  color: #82b1ff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.shadow-title-parallax-top-left-shadow {
+  position: fixed;
+  top: 0;
+  margin-top: 30px;
+  left: 100px;
+  width: 100%;
+  height: 300%;
+  text-align: left;
+  font-family: 'Muli', sans-serif;
+  -webkit-writing-mode: vertical-lr;
+  writing-mode: vertical-lr;
+  font-size: 14vw;
+  line-height: 1;
+  color: rgba(200, 200, 200, .1);
+  background: linear-gradient(90deg, rgba(200, 200, 200, 0), rgba(200, 200, 200, 0.35));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 900;
+  z-index: 1;
+}
+
+.shadow-title-parallax-bottom-right-shadow {
+  position: fixed;
+  bottom: 35vw;
+  margin-top: 30px;
+  left: 18vw;
+  text-align: right;
+  font-family: 'Muli', sans-serif;
+  font-size: 18vw;
+  line-height: 1;
+  color: rgba(200, 200, 200, .1);
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.05), rgba(200, 200, 200, 0));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 900;
+  z-index: 1;
+}
+
+.BG-IMG::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/homepage/images/electrician-1288717_1280.jpg');
+  background-position: center;
+  background-size: cover;
+  z-index: -1000;
+  opacity: 0.03;
+  pointer-events: none;
+}
+
+.btn {
+}
+
+.btn:hover {
+  background-color: white;
+  background: linear-gradient(90deg, rgba(67, 67, 126, 0.291), rgba(73, 74, 158, 0.257));
+  border-color: #4CAF50;
+}
+
+/* Existing CSS */
+/* ... (rest of your existing CSS) ... */
+
+/* Media Query for Small Screens */
+@media only screen and (max-width: 768px) {
+  .info-sections {
+    flex-direction: column;
+    align-items: center; /* Center align sections vertically */
+  }
+  .info-sections section {
+    margin: 2vw 0; /* Add margin between sections */
+    max-width: 100%; /* Ensure full width usage */
+  }
+}
+
+/* iPhone Specific Media Queries */
+
+/* iPhone 5, 5s, 5c, SE */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+  body {
+    background-color: #ffefef; /* Example change */
+  }
+
+  .Title01, .Title02 {
+    font-size: 4vw; /* Adjust font size */
+  }
+}
+
+/* iPhone 6, 6s, 7, 8 */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+  body {
+    background-color: #efffef; /* Example change */
+  }
+
+  .Title01, .Title02 {
+    font-size: 4.5vw; /* Adjust font size */
+  }
+}
+
+/* iPhone 6+, 7+, 8+ */
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
+  body {
+    background-color: #efefff; /* Example change */
+  }
+
+  .Title01, .Title02 {
+    font-size: 5vw; /* Adjust font size */
+  }
+}
+
+/* iPhone X, XS, 11 Pro */
+@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+  body {
+    background-color: #ffeeff; /* Example change */
+  }
+
+  .Title01, .Title02 {
+    font-size: 4.5vw; /* Adjust font size */
+  }
+}
+
+/* iPhone XR, 11 */
+@media only screen and (min-device-width: 414px) and (max-device-height: 896px) and (-webkit-min-device-pixel-ratio: 2) {
+  body {
+    background-color: #efffff; /* Example change */
+  }
+
+  .Title01, .Title02 {
+    font-size: 5vw; /* Adjust font size */
+  }
+}
+
+/* iPhone XS Max, 11 Pro Max */
+@media only screen and (min-device-width: 414px) and (max-device-height: 896px) and (-webkit-min-device-pixel-ratio: 3) {
+  body {
+    background-color: #ffefef; /* Example change */
+  }
+
+  .Title01, .Title02 {
+    font-size: 5vw; /* Adjust font size */
+  }
+}
